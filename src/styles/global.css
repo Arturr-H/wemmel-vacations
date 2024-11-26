@@ -98,7 +98,10 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 800px) {
     html {
-        font-size: 14px;
+        font-size: 10px;
+    }
+    .container {
+        padding: 4rem 1rem !important;
     }
 }
 #cursor-remove {

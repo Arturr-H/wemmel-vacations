@@ -1,0 +1,133 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+@layer base {
+    :root {
+        --background: hsl(225, 80%, 2%);
+        --foreground: hsl(210, 20%, 98%);
+        --card: hsl(224, 71.4%, 4.1%);
+        --element: hsl(220.9, 39.3%, 11%);
+        --element-bright: hsl(220.9, 39.3%, 13%);
+        --element-border: hsl(220.9, 39.3%, 14%);
+        --secondary: hsl(215, 27.9%, 16.9%);
+        --secondary-foreground: hsl(210, 20%, 98%);
+        --muted: hsl(215, 27.9%, 16.9%);
+        --muted-foreground: hsl(217.9, 10.6%, 64.9%);
+        --accent: hsl(215, 27.9%, 16.9%);
+        --accent-foreground: hsl(210, 20%, 98%);
+        --destructive: hsl(0, 62.8%, 30.6%);
+        --destructive-foreground: hsl(210, 20%, 98%);
+        --border: hsl(215, 27.9%, 16.9%);
+        --border-highlight: hsl(215, 27.9%, 20%);
+        --bright: hsl(215, 27.9%, 40%);
+        --input: hsl(215, 27.9%, 16.9%);
+        --ring: hsl(216, 12.2%, 83.9%);
+        --chart-1: hsl(220, 70%, 50%);
+        --chart-1-highlight: hsl(220, 70%, 54%);
+
+        --chart-2: hsl(160, 60%, 45%);
+        --chart-3: hsl(30, 80%, 55%);
+        --chart-4: hsl(280, 65%, 60%);
+        --chart-5: hsl(340, 75%, 55%);
+        --chart-5-highlight: hsl(340, 75%, 59%);
+
+        --hashtag-color: rgb(122, 240, 169);
+        --mention-color: rgb(116, 160, 231);
+
+        --border-radius: 0.5rem;
+        --navbar-height: 3.5rem;
+    }
+}
+
+@font-face {
+    font-family: "Epilogue";
+    src: url(../../fonts/Epilogue-Variable.ttf);
+}
+@font-face {
+    font-family: "Supreme";
+    src: url(../../fonts/Supreme-Variable.ttf);
+}
+
+body,
+html,
+#root {
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+    background: var(--background);
+    font-family: "Supreme", sans-serif;
+
+    overflow: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Epilogue", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 1rem;
+    box-sizing: border-box;
+
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+}.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    html {
+        font-size: 14px;
+    }
+}
+#cursor-remove {
+    cursor: none;
+}
+html {
+    cursor: none;
+}
+.container {
+    padding: 5rem;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 400;
+}
+p {
+    font-family: "Supreme", sans-serif;
+    color: #ccc;
+    font-size: 1.2rem;
+
+    text-align: justify;
+}

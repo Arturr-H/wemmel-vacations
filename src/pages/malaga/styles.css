@@ -1,0 +1,33 @@
+
+.malagaimg {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    user-select: none;
+    pointer-events: none;
+    z-index: 0;
+
+    filter: blur(15px) brightness(20%);
+}
+.title-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 0.4rem;
+}.title-row > h2, .title-row > h4 {
+    color: #fff;
+}.title-row > svg {
+    color: #fff;
+    transform: translateY(-0.2rem);
+}.title-row > h2 {
+    font-size: 2rem;
+}
+
+hr {
+    width: 100%;
+
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}

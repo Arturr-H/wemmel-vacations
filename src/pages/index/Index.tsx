@@ -53,7 +53,7 @@ export class Index extends React.PureComponent<Props, State> {
                     </div>
                     <div className="pic2">
                         <img src={f2} alt="f2" style={{ objectPosition: `center ${this.state.yPercent * 100}%` }} />
-                        <p>New York</p>
+                        <p>Nice</p>
                     </div>
                     <div className="pic1">
                         <img src={f3} alt="f3" style={{ objectPosition: `center ${this.state.yPercent * 100}%` }} />
